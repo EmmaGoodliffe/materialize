@@ -23,6 +23,12 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+      .tabs .indicator {
+        background-color: #80deea;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active {
+        background-color: #e0f2f1;
+      }
       @media screen and (max-width: 670px){
         header {
           min-height: 500px;
@@ -62,7 +68,7 @@
         <div class="col s12 l4">
           <img src="/portrait.jpg" alt="" class="responsive-img materialbox">
         </div>
-        <div class="col s12 l6 offset-l1">
+        <div class="col s12 l6 push-l1">
           <h2 class="indigo-text text-darken-3">Portraits</h2>
           <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -80,22 +86,45 @@
         <div class="col s12 l4">
           <img src="/shmrt.jpg" alt="" class="responsive-img materialbox">
         </div>
-        <div class="col s12 l6 offset-l1">
+        <div class="col s12 l6 push-l1">
           <h2 class="indigo-text text-darken-3">Shmrt</h2>
           <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </section>
 
-    <!-- parallax -->
+    <!-- parallax 1 -->
     <div class="parallax-container">
       <div class="parallax">
         <img src="/street.jpg" alt="" class="responsive-img">
       </div>
     </div>
-    <div class="container">
-      <h4>I am between the parallaxes.</h4>
-    </div>
+
+    <!-- tabs -->
+    <section class="section container" id="tabs">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">Some stuff</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col s12 l6">
+          <ul class="tabs">
+            <li class="tab col s6"><a href="#tab1" class="indigo-text text-darken-4">Photography</a></li>
+            <li class="tab col s6"><a href="#tab2" class="indigo-text text-darken-4">Editing</a></li>
+          </ul>
+          <div class="col s12" id="tab1">
+            <p class="indigo-text text-darken-4 flow-text">PHOTOGRAPHY</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col s12" id="tab2">
+            <p class="indigo-text text-darken-4 flow-text">EDITING</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax 2 -->
     <div class="parallax-container">
       <div class="parallax">
         <img src="/stars.jpg" alt="" class="responsive-img">
@@ -114,6 +143,7 @@
       $('.sidenav').sidenav();
       $('.materialbox').materialbox();
       $('.parallax').parallax();
+      $('.tabs').tabs();
     </script>
   </body>
 </html>
