@@ -4,14 +4,6 @@
     <!-- atom -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#002875">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#000000">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Google icon font -->
@@ -20,21 +12,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- my stuff -->
     <title>Website</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <style media="screen">
-      
+      header {
+        background: url('man.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      @media screen and (max-width: 670px){
+        header {
+          min-height: 500px;
+        }
+      }
     </style>
   </head>
   <body>
 
+    <!-- navigation -->
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="#" class="brand-logo">Materialize</a>
+          <a href="#" class="hide-on-large-only">
+            <i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i>
+          </a>
+          <!-- desktop -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Alpha</a></li>
+            <li><a href="#">Beta</a></li>
+            <li><a href="#">Gamma</a></li>
+          </ul>
+          <!-- mobile -->
+          <ul class="sidenav grey lighten-2" id="mobile-nav">
+            <li><a href="#">Alpha</a></li>
+            <li><a href="#">Beta</a></li>
+            <li><a href="#">Gamma</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <!-- photo grid -->
+    <section class="container section" id="photo-grid">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="/portrait.jpg" alt="" class="responsive-img materialbox">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-3">Portraits</h2>
+          <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l7">
+          <img src="/city.jpg" alt="" class="responsive-img materialbox">
+        </div>
+        <div class="col s12 l6 right-align pull-l4">
+          <h2 class="indigo-text text-darken-3">Cityscapes</h2>
+          <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="/shmrt.jpg" alt="" class="responsive-img materialbox">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-3">Shmrt</h2>
+          <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/street.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <div class="container">
+      <h4>I am between the parallaxes.</h4>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/stars.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <div class="container">
+      <h4>I am after the parallaxes.</h4>
+    </div>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
     <!-- materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- my stuff -->
     <script type="text/javascript">
-
+      $('.sidenav').sidenav();
+      $('.materialbox').materialbox();
+      $('.parallax').parallax();
     </script>
   </body>
 </html>
