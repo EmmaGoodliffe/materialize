@@ -19,6 +19,7 @@
   "homepage": "https://github.com/EmmaGoodliffe/materialize#readme",
   "devDependencies": {},
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nouislider": "^13.1.4"
   }
 }
