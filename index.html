@@ -45,6 +45,12 @@
       .card .card-action {
         display: flex;
       }
+      .pagination li.active {
+        background-color: #2196f3;
+      }
+      ul.pagination {
+        margin-bottom: 0;
+      }
       @media screen and (max-width: 860px){
         .card.small-card {
           max-width: 50vw;
@@ -63,8 +69,8 @@
     <header>
       <nav class="nav-wrapper transparent">
         <div class="container">
-          <a href="#" class="brand-logo">Materialize</a>
-          <a href="#" class="hide-on-large-only">
+          <a href="#!" class="brand-logo">Materialize</a>
+          <a href="#!" class="hide-on-large-only">
             <i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i>
           </a>
           <!-- desktop -->
@@ -82,9 +88,9 @@
         </div>
         <div class="row container">
           <div class="col s12">
-            <a href="#" class="breadcrumb">First</a>
-            <a href="#" class="breadcrumb">Second</a>
-            <a href="#" class="breadcrumb">Third</a>
+            <a href="#!" class="breadcrumb">First</a>
+            <a href="#!" class="breadcrumb">Second</a>
+            <a href="#!" class="breadcrumb">Third</a>
           </div>
         </div>
       </nav>
@@ -122,7 +128,7 @@
     </section>
 
     <!-- parallax 1 -->
-    <div class="parallax-container">
+    <div class="parallax-container hide-on-med-and-down">
       <div class="parallax">
         <img src="/street.jpg" alt="" class="responsive-img">
       </div>
@@ -158,13 +164,13 @@
           <i class="material-icons circle grey">person</i>
           <span class="title">Identity</span>
           <p class="grey-text">Bio</p>
-          <a href="#" class="secondary-content indigo-text">
+          <a href="#!" class="secondary-content indigo-text">
             <i class="material-icons">email</i>
           </a>
         </li>
         <li class="collection-item">
           <span class="title">HTML</span>
-          <a href="#" class="secondary-content indigo-text">
+          <a href="#!" class="secondary-content indigo-text">
             <i class="material-icons">menu</i>
           </a>
           <p class="grey-text">Description field</p>
@@ -173,7 +179,7 @@
     </section>
 
     <!-- parallax 2 -->
-    <div class="parallax-container">
+    <div class="parallax-container hide-on-med-and-down">
       <div class="parallax">
         <img src="/stars.jpg" alt="" class="responsive-img">
       </div>
@@ -248,7 +254,7 @@
             </div>
             <div class="card-action">
               <a href="#photo-grid">More photos</a>
-              <a href="#">View details</a>
+              <a href="#!">View details</a>
             </div>
           </div>
         </div>
@@ -280,20 +286,27 @@
             <ul id="socials">
               <li>
                 <i class="fab fa-twitter"></i>
-                <a href="#" class="grey-text text-lighten-3">Twitter</a>
+                <a href="#!" class="grey-text text-lighten-3">Twitter</a>
               </li>
               <li>
                 <i class="fab fa-facebook"></i>
-                <a href="#" class="grey-text text-lighten-3">Facebook</a>
+                <a href="#!" class="grey-text text-lighten-3">Facebook</a>
               </li>
               <li>
                 <i class="fab fa-instagram"></i>
-                <a href="#" class="grey-text text-lighten-3">Instagram</a>
+                <a href="#!" class="grey-text text-lighten-3">Instagram</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <ul class="pagination grey lighten-1 center">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
       <div class="footer-copyright grey darken-4">
         <div class="container center-align tooltip" data-tooltip="Not real" data-position="top">
           &copy; Emma Goodliffe 2019
