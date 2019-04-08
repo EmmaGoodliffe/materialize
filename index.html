@@ -346,7 +346,30 @@
       </a>
       <a href="#!" class="btn blue lighten-4" id="show-boom-btn">show boom</a>
 
-      <h5 class="indigo-text text-darken-4"></h5>
+      <h5 class="indigo-text text-darken-4">Carousel</h5>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+      </div>
+
+      <h5 class="indigo-text text-darken-4">Collapsible</h5>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Weather</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Map</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>FIIIRRRE!!!</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+        </li>
+      </ul>
     </section>
 
     <!-- footer -->
@@ -397,7 +420,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- my stuff -->
     <script type="text/javascript">
-      $('.sidenav').sidenav();
+      $('.sidenav').sidenav().click(() => {
+        $('.sidenav').sidenav('close');
+      });
       $('.materialbox').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
@@ -411,6 +436,8 @@
       $('#show-boom-btn').click(() => {
         $('#boom').toggleClass('scale-out').toggleClass('scale-in');
       });
+      $('.carousel').carousel();
+      $('.collapsible').collapsible();
     </script>
   </body>
 </html>
