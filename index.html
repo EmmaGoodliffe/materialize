@@ -51,6 +51,9 @@
       ul.pagination {
         margin-bottom: 0;
       }
+      .full-width {
+        min-width: 100%;
+      }
       @media screen and (max-width: 860px){
         .card.small-card {
           max-width: 50vw;
@@ -370,6 +373,17 @@
           <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
         </li>
       </ul>
+
+      <h5 class="indigo-text text-darken-4">Drop down menu</h5>
+      <a class="dropdown btn" href="#!" data-target="dropdown-id">Show menu</a>
+      <ul id="dropdown-id" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!">two</a></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+
+      <h5 class="indigo-text text-darken-4"></h5>
     </section>
 
     <!-- footer -->
@@ -438,6 +452,10 @@
       });
       $('.carousel').carousel();
       $('.collapsible').collapsible();
+      $('.dropdown').dropdown();
+      $('.pushpin').pushpin({
+        top: 1000
+      });
     </script>
   </body>
 </html>
