@@ -29,6 +29,9 @@
       .tabs .tab a:focus, .tabs .tab a:focus.active {
         background-color: #e0f2f1;
       }
+      .space {
+        min-width: 10px;
+      }
       @media screen and (max-width: 670px){
         header {
           min-height: 500px;
@@ -130,9 +133,36 @@
         <img src="/stars.jpg" alt="" class="responsive-img">
       </div>
     </div>
-    <div class="container">
-      <h4>I am after the parallaxes.</h4>
-    </div>
+
+    <!-- form -->
+    <section class="container section" id="form">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Form</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col s12 l5 push-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons">email</i>
+              <input type="email" name="" value="" id="email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons">format_align_left</i>
+              <textarea class="materialize-textarea" rows="8" cols="80" id="message"></textarea>
+              <label for="message">Your message</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons">calendar_today</i>
+              <input class="datepicker" type="text" name="" value="" id="data">
+              <label for="date">Choose a date</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
@@ -144,6 +174,9 @@
       $('.materialbox').materialbox();
       $('.parallax').parallax();
       $('.tabs').tabs();
+      $('.datepicker').datepicker({
+
+      });
     </script>
   </body>
 </html>
