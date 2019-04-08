@@ -223,7 +223,7 @@
         </div>
       </div>
       <div class="footer-copyright grey darken-4">
-        <div class="container center-align">
+        <div class="container center-align tooltip" data-tooltip="Not real" data-position="top">
           &copy; Emma Goodliffe 2019
         </div>
       </div>
@@ -243,6 +243,7 @@
         format: 'dd mmmm, yyyy'
       });
       // see https://materializecss.com/pickers.html for more on datepicker
+      $('.tooltip').tooltip();
     </script>
   </body>
 </html>
