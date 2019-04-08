@@ -51,8 +51,8 @@
       ul.pagination {
         margin-bottom: 0;
       }
-      .full-width {
-        min-width: 100%;
+      .pushpin {
+        z-index: 3;
       }
       @media screen and (max-width: 860px){
         .card.small-card {
@@ -72,7 +72,7 @@
     <header>
       <nav class="nav-wrapper transparent">
         <div class="container">
-          <a href="#!" class="brand-logo">Materialize</a>
+          <a href="#" class="brand-logo">Materialize</a>
           <a href="#!" class="hide-on-large-only">
             <i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i>
           </a>
@@ -100,6 +100,27 @@
         </div>
       </nav>
     </header>
+
+    <nav class="nav-wrapper pushpin yellow darken-2">
+      <div class="container">
+        <a href="#" class="brand-logo">Materialize</a>
+        <a href="#!" class="hide-on-large-only">
+          <i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photo-grid">Photo grid</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#forms">Forms and cards</a></li>
+          <li><a href="#other">Other</a>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-nav">
+          <li><a href="#photo-grid">Photo grid</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#forms">Forms and cards</a></li>
+          <li><a href="#other">Other</a>
+        </ul>
+      </div>
+    </nav>
 
     <!-- photo grid -->
     <section class="container section scrollspy" id="photo-grid">
