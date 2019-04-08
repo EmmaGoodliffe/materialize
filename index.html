@@ -406,6 +406,23 @@
         <li><a href="#!">three</a></li>
       </ul>
 
+      <h5 class="indigo-text text-darken-4">Toasts</h5>
+      <div class="card">
+        <form action="" class="card-content">
+          <div class="input-field">
+            <div class="btn-floating grey darken-3 prefix">
+              <i class="material-icons">message</i>
+            </div>
+            <textarea class="materialize-textarea" rows="8" cols="80" id="toast"></textarea>
+            <label for="toast">Your toast</label>
+          </div>
+
+          <div class="input-field center">
+            <button class="btn yellow darken-2 waves-effect waves-light" id="toast-btn" type="button">show</button>
+          </div>
+        </form>
+      </div>
+
       <h5 class="indigo-text text-darken-4"></h5>
     </section>
 
@@ -481,6 +498,11 @@
       });
       $('.pushpin-mobile').pushpin({
         top: 500
+      });
+      $('#toast-btn').click(() => {
+        M.toast({
+          html: $('#toast').val()
+        });
       });
     </script>
   </body>
