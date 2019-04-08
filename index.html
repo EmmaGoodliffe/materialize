@@ -39,6 +39,17 @@
         margin-top: 2px;
         margin-bottom: 2px;
       }
+      .card.small-card {
+        max-width: 30vw;
+      }
+      .card .card-action {
+        display: flex;
+      }
+      @media screen and (max-width: 860px){
+        .card.small-card {
+          max-width: 50vw;
+        }
+      }
       @media screen and (max-width: 670px){
         header {
           min-height: 500px;
@@ -141,7 +152,7 @@
       </div>
     </div>
 
-    <!-- form -->
+    <!-- forms and cards -->
     <section class="container section scrollspy" id="forms">
       <div class="row">
         <div class="col s12 l5">
@@ -191,6 +202,23 @@
               <button class="btn yellow darken-2 waves-effect waves-light" type="button">submit</button>
             </div>
           </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card small-card">
+            <div class="card-image">
+              <img src="/shmrt.jpg" alt="" class="materialbox">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Why is it called Shmrt?</span>
+              <p>Because look at its little face!</p>
+            </div>
+            <div class="card-action">
+              <a href="#photo-grid">More photos</a>
+              <a href="#">View details</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
