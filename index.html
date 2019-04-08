@@ -78,12 +78,14 @@
             <li><a href="#photo-grid">Photo grid</a></li>
             <li><a href="#tabs">Tabs</a></li>
             <li><a href="#forms">Forms and cards</a></li>
+            <li><a href="#other">Other</a>
           </ul>
           <!-- mobile -->
           <ul class="sidenav grey lighten-2" id="mobile-nav">
             <li><a href="#photo-grid">Photo grid</a></li>
             <li><a href="#tabs">Tabs</a></li>
             <li><a href="#forms">Forms and cards</a></li>
+            <li><a href="#other">Other</a>
           </ul>
         </div>
         <div class="row container">
@@ -272,6 +274,81 @@
       </div>
     </div>
 
+    <!-- other -->
+    <section class="section container scrollspy" id="other">
+      <h2 class="indigo-text text-darken-4">Other</h2>
+      <h5 class="indigo-text text-darken-4">Alignment</h5>
+      <div class="valign-wrapper grey lighten-3 yellow-text text-darken-2 row" style="min-height: 300px">
+        <h3 style="padding-left: 10px">Vertically aligned</h3>
+      </div>
+
+      <h5 class="indigo-text text-darken-4">Videos</h5>
+      <div class="video-container row">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h5 class="indigo-text text-darken-4">Tables</h5>
+      <table class="striped responsive-table">
+        <thead>
+          <tr>
+            <th>CSS type</th>
+            <th>Ranking</th>
+            <th>Learnt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Materialize</td>
+            <td>1</td>
+            <td>
+              <label>
+                <input type="checkbox" name="" value="true">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>SASS</td>
+            <td>2</td>
+            <td>
+              <label>
+                <input type="checkbox" name="" value="true">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>LESS</td>
+            <td>Unknown</td>
+            <td>
+              <label>
+                <input type="checkbox" name="" value="false">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Vanilla CSS</td>
+            <td>3</td>
+            <td>
+              <label>
+                <input type="checkbox" name="" value="true">
+                <span></span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h5 class="indigo-text text-darken-4">Scaling</h5>
+      <a href="#!" class="btn scale-transition scale-out red darken-1" id="boom">
+        BOOM!
+      </a>
+      <a href="#!" class="btn blue lighten-4" id="show-boom-btn">show boom</a>
+
+      <h5 class="indigo-text text-darken-4"></h5>
+    </section>
+
     <!-- footer -->
     <footer class="page-footer grey darken-3">
       <div class="container">
@@ -331,6 +408,9 @@
       $('.tooltip').tooltip();
       $('.scrollspy').scrollSpy();
       $('.modal').modal();
+      $('#show-boom-btn').click(() => {
+        $('#boom').toggleClass('scale-out').toggleClass('scale-in');
+      });
     </script>
   </body>
 </html>
