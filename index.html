@@ -51,7 +51,7 @@
       ul.pagination {
         margin-bottom: 0;
       }
-      .pushpin {
+      .pushpin, .pushpin-mobile {
         z-index: 3;
       }
       @media screen and (max-width: 860px){
@@ -101,7 +101,7 @@
       </nav>
     </header>
 
-    <nav class="nav-wrapper pushpin yellow darken-2">
+    <nav class="nav-wrapper pushpin yellow darken-2 hide-on-small-only">
       <div class="container">
         <a href="#" class="brand-logo">Materialize</a>
         <a href="#!" class="hide-on-large-only">
@@ -113,12 +113,14 @@
           <li><a href="#forms">Forms and cards</a></li>
           <li><a href="#other">Other</a>
         </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-nav">
-          <li><a href="#photo-grid">Photo grid</a></li>
-          <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#forms">Forms and cards</a></li>
-          <li><a href="#other">Other</a>
-        </ul>
+      </div>
+    </nav>
+    <nav class="nav-wrapper pushpin-mobile yellow darken-2 hide-on-med-and-up">
+      <div class="container">
+        <a href="#" class="brand-logo">Materialize</a>
+        <a href="#!" class="hide-on-large-only">
+          <i class="material-icons sidenav-trigger" data-target="mobile-nav">menu</i>
+        </a>
       </div>
     </nav>
 
@@ -476,6 +478,9 @@
       $('.dropdown').dropdown();
       $('.pushpin').pushpin({
         top: 1000
+      });
+      $('.pushpin-mobile').pushpin({
+        top: 500
       });
     </script>
   </body>
